@@ -29,6 +29,11 @@ a:visited:hover {
   color: #fff;
 }
 
+
+
+.edit-page p {
+  margin: 0 0 10px 0 ;
+}
 /*
  * This is a manifest file that'll be compiled into application.css.
  *

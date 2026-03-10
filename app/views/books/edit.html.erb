@@ -1,6 +1,7 @@
+<div class="edit-page">
 <h1>Editing Book</h1>
 
-<%= form_with model: @book do |f| %>
+<%= form_with model: @book, html:{ class: "book-form" } do |f| %>
 
   <p>
     Title<br>
@@ -16,7 +17,10 @@
     <%= f.submit "Update Book" %>
   </p>
 
-  <%= link_to "Show", book_path(@book) %> |
-  <%= link_to "Back", books_path %>
-
 <% end %>
+
+  <div class="book-links">
+    <%= link_to "Show", book_path(@book) %> |
+    <%= link_to "Back", books_path %>
+  </div>
+</div>
